@@ -1,16 +1,30 @@
 import React, { Component } from 'react'
 import logo from './mini-unicorn.svg'
 import Note from './Note/Note'
+import NoteForm from './NoteForm/NoteForm'
 import './App.css'
 class App extends Component {
   constructor(props){
     super(props)
+    this.addNote = this.addNote.bind(this)
+
     this.state = {
       notes: [
         {id: 1, noteContent: 'This is note 1'},
         {id: 2, noteContent: 'This is note 2'},
       ]
     }
+  }
+
+  addNote(note){
+    const previousNotes = this.state.notes;
+    previousNotes.push(
+      { id: previousNotes.length + 1, noteContent: note}
+    )
+
+    this.setState({
+      notes: previousNotes
+    })
   }
 
   render() {
@@ -33,13 +47,12 @@ class App extends Component {
               )}
             </div>
             <div className="notesFooter">
-              Footer will be here
+              <NoteForm addNote={this.addNote}/>
             </div>
           </div>
       </div>
     )
   }
-
 }
 
 export default App
