@@ -3,7 +3,6 @@ import logo from './mini-unicorn.svg'
 import Note from './Note/Note'
 import NoteForm from './NoteForm/NoteForm'
 import Firebase from './Config/config'
-import firebase from 'firebase/app'
 import 'firebase/database'
 import './App.css'
 class App extends Component {
