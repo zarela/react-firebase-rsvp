@@ -38,29 +38,58 @@ class App extends Component {
     this.database.push().set({ noteContent: note })
   }
 
+  getYear() {
+    return new Date().getFullYear();
+  }
+
   render() {
     return (
       <div className="App">
+        <div className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <div>Baby Graves</div>
+        </div>
+        <p>
+          It's a girl! <br />
+          Thank you for sharing this special time with us, to celebrate the welcoming of our baby girl!
+        </p>
+
+        <ul class=" menu-items">
+            <li class="tab">
+              <a ui-sref="rsvp" ui-sref-active="active">RSVP</a>
+            </li>
+            <li class="tab">
+              <a ui-sref="shower-details" ui-sref-active="active">Shower Details</a>
+            </li>
+            <li class="tab">
+              <a ui-sref="registry" ui-sref-active="active">Registry</a>
+            </li>
+            <li class="tab">
+              <a ui-sref="friends-notes" ui-sref-active="active">Friends Notes</a>
+            </li>
+          </ul>
+
         <div className="notesWrapper">
-            <div className="notesHeader">
-              <img src={logo} className="App-logo" alt="logo" />
-              <div className="heading">Baby Graves</div>
-            </div>
-            <div className="notesBody">
-              {this.state.notes.map(note => {
-                return (
-                  <Note
-                    noteContent={note.noteContent}
-                    noteId={note.id}
-                    key={note.id}
-                  />
-                )}
+          <div className="notesBody">
+            {this.state.notes.map(note => {
+              return (
+                <Note
+                  noteContent={note.noteContent}
+                  noteId={note.id}
+                  key={note.id}
+                />
               )}
-            </div>
+            )}
+          </div>
             <div className="notesFooter">
               <NoteForm addNote={this.addNote}/>
             </div>
           </div>
+        <div className="footer">
+          © ZG Stardust {''}
+          {this.getYear()} {''}
+          &#10084; All Rights Reserved
+        </div>
       </div>
     )
   }
