@@ -1,16 +1,17 @@
 .note {
-  padding:10px 10px 38px 34px;
+  padding:10px;
   height: auto;
   margin: auto;
   margin-bottom: 8px;
   width: 60%;
   font-family: 'Lato', sans-serif;
-  font-size: 1.4em;
+  font-size: 1.2em;
   color: #222;
   background-color: #eed;
-  border-radius: 3px;
-  box-shadow: 43x 3px 2px #333;
+  border-radius: 4px;
+  box-shadow: 4px 3px 2px #333;
   opacity: 1;
+  margin-bottom: 1rem;
 }
 
 @keyframes fadeIn { from { opacity:0; } to { opacity:0.8; } }
@@ -24,10 +25,9 @@
 }
 
 .noteContent{
-  float:left;
-  padding-right: 70px;
-  padding-bottom: 10px;
-  display: block;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 
 .closebtn {

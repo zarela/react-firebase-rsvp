@@ -4,9 +4,8 @@
 }
 
 .App-header {
-  width: 100%;
-  min-width: 1050px;
-
+  /* width: 100%;
+  min-width: 1050px; */
   height: 8rem;
   background-color: #282c34;
   font-family: 'Permanent Marker', cursive;
@@ -43,17 +42,20 @@
 /* From tutorial */
 
 body {
-  /* width: 100%;
   min-height:100%;
+  /* width: 100%;
   background:
     linear-gradient(-45deg, rgba(0,0,0,0.3), rgba(0, 40, 105, 0.8)),
     url('./Static/img/background.jpg');
   background-attachment: fixed;
   background-size: cover; */
+  min-height: 400px;
+  margin-bottom: 100px;
+  clear: both;
 }
 
 p {
-  color:  #282c34;
+  color:  #080a0e;
   font-family: "Quicksand", sans-serif;
   text-align: center;
   font-size: 1.5rem;
@@ -66,8 +68,8 @@ p {
   border-spacing: 2em;
   text-transform: uppercase;
   list-style-type: none;
-  border-top: 5px solid #282c34;
-  border-bottom: 5px solid #282c34;
+  /* border-top: 5px solid #282c34;
+  border-bottom: 5px solid #282c34; */
 }
 
 .menu-items {
@@ -80,16 +82,15 @@ p {
 
 .tab:hover {
   color: #deea97;
-  border-top: 5px solid #deea97;
-  border-bottom: 5px solid #deea97;
+  border-top: none;
+  border-bottom: none;
 }
-
-
 
 .footer {
   display: flex;
   align-items: center;
   position: fixed;
+  width:100%;
   justify-content: center;
   left: 0;
   bottom: 0;
@@ -102,10 +103,10 @@ p {
 }
 
 .notesWrapper {
-  /* display: flex;
+  display: flex;
   flex: 1 1 auto;
   flex-direction: column;
-  height: 100%; */
+  height: 100%;
 }
 
 .notesBody {
@@ -116,6 +117,8 @@ p {
   align-items: flex-start;
   align-content: flex-start;
   overflow: auto;
+
+  min-height: 100%;
 }
 
 .notesFooter {

@@ -85,6 +85,7 @@ class App extends Component {
               <NoteForm addNote={this.addNote}/>
             </div>
           </div>
+        <br />
         <div className="footer">
           © ZG Stardust {''}
           {this.getYear()} {''}
