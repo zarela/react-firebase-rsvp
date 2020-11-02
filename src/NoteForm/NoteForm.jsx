@@ -30,7 +30,7 @@ class NoteForm extends Component {
       <div className="formWrapper">
         <input
           className="noteInput"
-          placeholder="Write a new note..."
+          placeholder="Write a note for Zarela and Dean..."
           value={this.state.newNoteContent}
           onChange={this.handleUserInput}
         />
@@ -38,7 +38,7 @@ class NoteForm extends Component {
           className="noteButton"
           onClick={this.writeNote}
         >
-          Add a note
+          Leave a note
         </button>
       </div>
     )

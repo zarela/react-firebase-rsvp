@@ -14,8 +14,7 @@
   /* color: #deea97; */
   /* color: #f7b5ac; */
   color: #f7b5ac;
-  /* text-shadow: 3px 3px 10px #000; */
- text-shadow: 3px 3px 3px #000;
+  text-shadow: 3px 3px 3px #000;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -42,11 +41,8 @@
   }
 }
 
-/* From tutorial */
-
 body {
   min-height:100%;
-  /* background-color: #f7b5ac; */
   /* width: 100%;
   background:
     linear-gradient(-45deg, rgba(0,0,0,0.3), rgba(0, 40, 105, 0.8)),
@@ -80,8 +76,6 @@ p {
   border-spacing: 2em;
   text-transform: uppercase;
   list-style-type: none;
-  /* border-top: 5px solid #282c34;
-  border-bottom: 5px solid #282c34; */
 }
 
 .tab > button {
@@ -104,7 +98,7 @@ p {
   bottom: 0;
   width: 100%;
   background-color: #282c34;
-  color: #f7b5ac;
+  color: #f3cfca;
   height: 4rem;
   font-family: "Quicksand", sans-serif;
   font-size: 1.2rem;
@@ -125,12 +119,5 @@ p {
   align-items: flex-start;
   align-content: flex-start;
   overflow: auto;
-
   min-height: 100%;
-}
-
-.notesFooter {
-  display: flex;
-  flex: 1 1 5%;
-  background-color: rgba(0,0,0,0.5);
 }
