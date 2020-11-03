@@ -29,6 +29,7 @@ class App extends Component {
       previousNotes.push({
         id: snap.key,
         noteContent: snap.val().noteContent,
+        noteAuthor: snap.val().noteAuthor
       })
 
       this.setState({
@@ -38,7 +39,7 @@ class App extends Component {
   }
 
   addNote(note){
-    this.database.push().set({ noteContent: note })
+    this.database.push().set(note)
   }
 
   renderView = view => {
@@ -93,8 +94,7 @@ class App extends Component {
               {this.state.notes.map(note => {
                 return (
                   <Note
-                    noteContent={note.noteContent}
-                    noteId={note.id}
+                    note={note}
                     key={note.id}
                   />
                 )}
