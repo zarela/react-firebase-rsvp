@@ -18,10 +18,7 @@ class App extends Component {
 
     this.state = {
       notes: [],
-      details: false,
-      rsvp: false,
-      registry: false,
-      friendsNotes: false
+      path: ''
     }
   }
 
@@ -44,27 +41,9 @@ class App extends Component {
     this.database.push().set({ noteContent: note })
   }
 
-  toggleDetails = () => {
+  renderView = view => {
     this.setState({
-      details: !this.state.details
-    })
-  }
-
-  toggleRsvp = () => {
-    this.setState({
-      rsvp: !this.state.rsvp
-    })
-  }
-
-  toggleRegistry = () => {
-    this.setState({
-      registry: !this.state.registry
-    })
-  }
-
-  toggleFriendsNotes = () => {
-    this.setState({
-      friendsNotes: !this.state.friendsNotes
+      path: view
     })
   }
 
@@ -86,29 +65,29 @@ class App extends Component {
 
         <ul className="menu-items">
           <li className="tab">
-            <button className="tab" onClick={this.toggleDetails}>Shower Details</button>
+            <button className="tab" onClick={() => this.renderView('details')}>Shower Details</button>
           </li>
           <li className="tab">
-            <button className="tab" onClick={this.toggleRsvp}>RSVP</button>
+            <button className="tab" onClick={() => this.renderView('rsvp')}>RSVP</button>
           </li>
           <li className="tab">
-            <button className="tab" onClick={this.toggleRegistry}>Registry</button>
+            <button className="tab" onClick={() => this.renderView('registry')}>Registry</button>
           </li>
           <li className="tab">
-            <button className="tab" onClick={this.toggleFriendsNotes}>Friends Notes</button>
+            <button className="tab" onClick={() => this.renderView('friendsNotes')}>Friends Notes</button>
           </li>
         </ul>
 
-        {this.state.details && (
+        {this.state.path === 'details' && (
           <ShowerDetails />
         )}
-        {this.state.rsvp && (
+        {this.state.path === 'rsvp' && (
           <Rsvp />
         )}
-        {this.state.registry && (
+        {this.state.path === 'registry' && (
           <Registry />
         )}
-        {this.state.friendsNotes && (
+        {this.state.path === 'friendsNotes' && (
           <div className="notesWrapper">
             <div className="notesBody">
               {this.state.notes.map(note => {
