@@ -12,7 +12,7 @@
 /build
 
 # database
-src/Config/config.js
+.env
 
 # misc
 .DS_Store
