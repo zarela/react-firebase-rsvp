@@ -57,10 +57,9 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <div>Baby Graves</div>
+          <div>It's a girl!</div>
         </div>
         <p>
-          It's a girl! <br />
           Thank you for sharing this special time with us, to celebrate the welcoming of our baby girl!
         </p>
 
@@ -72,10 +71,10 @@ class App extends Component {
             <button className="tab" onClick={() => this.renderView('rsvp')}>RSVP</button>
           </li>
           <li className="tab">
-            <button className="tab" onClick={() => this.renderView('registry')}>Registry</button>
+            <button className="tab" onClick={() => this.renderView('friendsNotes')}>Leave a note</button>
           </li>
           <li className="tab">
-            <button className="tab" onClick={() => this.renderView('friendsNotes')}>Friends Notes</button>
+            <button className="tab" onClick={() => this.renderView('registry')}>Registry</button>
           </li>
         </ul>
 
@@ -83,7 +82,7 @@ class App extends Component {
           <ShowerDetails />
         )}
         {this.state.path === 'rsvp' && (
-          <Rsvp />
+          <Rsvp buttonRoute={() => this.renderView('rsvp')}/>
         )}
         {this.state.path === 'registry' && (
           <Registry />
