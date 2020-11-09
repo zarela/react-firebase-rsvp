@@ -1,18 +1,39 @@
+@media only screen and (max-width: 600px) {
+  p{
+    font-size: 1.2em !important;
+  }
+  .App-header > div {
+    font-size: 1.8rem;
+    width: auto !important;
+  }
+  .App-logo {
+    height: 6rem !important;
+  }
+  .menu-items {
+    flex-direction: column !important;
+  }
+  .tab {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.2em !important;
+    padding-bottom: 0.2em;
+  }
+  .footer {
+    font-size: 1.0em !important;
+  }
+
+}
+
 .App {
   width: 100%;
-  min-width: 1050px;
   /* background-color: #f7b5ac; */
 }
 
 .App-header {
-  /* width: 100%;
-  min-width: 1050px; */
   height: 8rem;
   background-color: #282c34;
   font-family: 'Permanent Marker', cursive;
   font-size: 3.2em;
   /* color: #deea97; */
-  /* color: #f7b5ac; */
   color: #f7b5ac;
   text-shadow: 3px 3px 3px #000;
   display: flex;
@@ -23,7 +44,7 @@
 .App-logo {
   height: 8rem;
   pointer-events: none;
-  margin: 0 1.5rem;
+  margin: 0 1rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -49,16 +70,20 @@ body {
     url('./Static/img/background.jpg');
   background-attachment: fixed;
   background-size: cover; */
-  min-height: 400px;
+  /* min-height: 400px; */
   margin-bottom: 100px;
   clear: both;
 }
 
 p {
-  color:  #080a0e;
+  color: #080a0e;
   font-family: "Quicksand", sans-serif;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.5em;
+}
+
+.welcome-message {
+  padding: 5px 10px 0;
 }
 
 .menu-items {
@@ -70,7 +95,7 @@ p {
 }
 
 .tab {
-  color:  #282c34;
+  color: #f7b5ac;
   font-family: 'Permanent Marker', cursive;
   font-size: 1.5rem;
   border-spacing: 2em;
@@ -85,11 +110,11 @@ p {
 }
 
 .tab:hover {
-  color: #f7b5ac;
+  color:#ddbdff;
 }
 
 .center {
-  margin: 3em;
+  margin: 2em;
   display: flex;
   flex-direction: column;
   align-items: center;

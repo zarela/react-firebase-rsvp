@@ -59,9 +59,12 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <div>It's a girl!</div>
         </div>
-        <p>
-          Thank you for sharing this special time with us, to celebrate the welcoming of our baby girl!
-        </p>
+
+        <div className="welcome-message">
+          <p>
+            Thank you for sharing this special time with us to celebrate the welcoming of our baby girl Samantha!
+          </p>
+        </div>
 
         <ul className="menu-items">
           <li className="tab">

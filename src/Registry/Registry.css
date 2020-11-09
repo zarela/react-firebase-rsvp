@@ -1,3 +1,10 @@
+@media only screen and (max-width: 600px) {
+  .amazon-logo {
+    width: 200px !important;
+  }
+}
+
 .amazon-logo {
   margin: 1.5rem;
+  width: 300px;
 }
