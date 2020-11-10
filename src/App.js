@@ -3,7 +3,6 @@ import logo from './mini-unicorn.svg'
 import Note from './Note/Note'
 import NoteForm from './NoteForm/NoteForm'
 import ShowerDetails from './ShowerDetails/ShowerDetails'
-import Rsvp from './Rsvp/Rsvp'
 import Registry from './Registry/Registry'
 import Firebase from './Config/config'
 import 'firebase/database'
@@ -68,30 +67,29 @@ class App extends Component {
 
         <ul className="menu-items">
           <li className="tab">
-            <button className="tab" onClick={() => this.renderView('details')}>Shower Details</button>
+            <button className="tab" onClick={() => this.renderView('details')}>Shower details</button>
           </li>
           <li className="tab">
-            <button className="tab" onClick={() => this.renderView('rsvp')}>RSVP</button>
+            <button className="tab" onClick={() => this.renderView('friendsNotes')}>Leave a message</button>
           </li>
           <li className="tab">
-            <button className="tab" onClick={() => this.renderView('friendsNotes')}>Leave a note</button>
-          </li>
-          <li className="tab">
-            <button className="tab" onClick={() => this.renderView('registry')}>Registry</button>
+            <button className="tab" onClick={() => this.renderView('registry')}>Baby registry</button>
           </li>
         </ul>
 
         {this.state.path === 'details' && (
           <ShowerDetails />
         )}
-        {this.state.path === 'rsvp' && (
-          <Rsvp buttonRoute={() => this.renderView('rsvp')}/>
-        )}
         {this.state.path === 'registry' && (
           <Registry />
         )}
         {this.state.path === 'friendsNotes' && (
           <div className="notesWrapper">
+            <p>Leave a note for Zarela and Dean</p>
+            <br />
+            <div className="notesFooter">
+              <NoteForm addNote={this.addNote}/>
+            </div>
             <div className="notesBody">
               {this.state.notes.map(note => {
                 return (
@@ -100,16 +98,13 @@ class App extends Component {
                     key={note.id}
                   />
                 )}
-              )}
-            </div>
-            <div className="notesFooter">
-              <NoteForm addNote={this.addNote}/>
+              ).reverse()}
             </div>
           </div>
         )}
 
         <div className="footer">
-          © ZG Stardust {''}
+          © Zarela Graves {''}
           {this.getYear()} {''}
           &#10084; All Rights Reserved
         </div>

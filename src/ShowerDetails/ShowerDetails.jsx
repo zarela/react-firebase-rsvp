@@ -12,8 +12,6 @@ const ShowerDetails = () => {
         Day: Saturday November 21th<br />
         Time: 5:00 PM - 6:30 PM<br />
         Virtual via Zoom<br />
-        <br />
-        RSVP NOW
       </p>
     </div>
   )

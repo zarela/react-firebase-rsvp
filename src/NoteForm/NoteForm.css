@@ -1,4 +1,15 @@
-.formWrapper{
+@media only screen and (max-width: 600px) {
+  .submitBlock {
+    flex-direction: column !important;
+    margin-top: 1em;
+    margin-left: 0 !important;
+  }
+  .authorInput {
+    width: 63% !important;
+  }
+}
+
+.formWrapper {
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -28,27 +39,51 @@
   outline: none;
 }
 
-.noteButton:hover{
+.noteButton:hover {
   background-color: #f3cfca;
   color: #fff;
   transition: 0.2s ease-out;
 }
 
-.noteInput{
-  width: 59%;
-  min-width: 59%;
+.submitBlock {
+  margin-left: 1em;
+  width: 110%;
+  min-width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.noteInput {
+  width: 69%;
+  min-width: 69%;
   height: 5rem;
-  font-size: 1.3em;
+  font-size: 1.2em;
   outline: none;
-  border: 2px solid #282c34;
+  border: 2px solid #ddbdff;
   border-radius: 0.3em;
   font-family: "Quicksand", sans-serif;
-  color: #fff;
+  color: #d2cbcb;
+  transition: 0.2s ease-out;
+  padding: 0.5em 0 0 1rem;
+}
+
+.authorInput {
+  width: 40%;
+  min-width: 40%;
+  height: 3.3rem;
+  font-size: 1.2em;
+  outline: none;
+  border: 2px solid #ddbdff;
+  border-radius: 0.3em;
+  font-family: "Quicksand", sans-serif;
+  color: #d2cbcb;
   transition: 0.2s ease-out;
   padding-left: 1rem;
 }
 
-.noteInput:focus{
+.noteInput:focus, .noteAuthor:focus{
   background-color: #E4F1FE;
   color: #282c34;
   transition: 0.2s ease-in;

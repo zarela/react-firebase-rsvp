@@ -6,7 +6,7 @@ class Note extends Component {
     return(
       <div className="note fade-in">
         <p className="noteContent">{this.props.note.noteContent}</p>
-        <p className="noteAuthor">{this.props.note.noteAuthor || 'Anonymous'}</p>
+        <p className="noteAuthor">~ {this.props.note.noteAuthor || 'Anonymous'}</p>
       </div>
     )
   }

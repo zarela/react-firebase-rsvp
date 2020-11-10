@@ -25,7 +25,6 @@
 
 .App {
   width: 100%;
-  /* background-color: #f7b5ac; */
 }
 
 .App-header {
@@ -64,13 +63,6 @@
 
 body {
   min-height:100%;
-  /* width: 100%;
-  background:
-    linear-gradient(-45deg, rgba(0,0,0,0.3), rgba(0, 40, 105, 0.8)),
-    url('./Static/img/background.jpg');
-  background-attachment: fixed;
-  background-size: cover; */
-  /* min-height: 400px; */
   margin-bottom: 100px;
   clear: both;
 }

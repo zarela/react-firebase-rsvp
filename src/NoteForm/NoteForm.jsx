@@ -40,24 +40,26 @@ class NoteForm extends Component {
   render(){
     return(
       <div className="formWrapper">
-        <input
+        <textarea
           className="noteInput"
-          placeholder="Write a note for Zarela and Dean..."
+          placeholder="Write your message..."
           value={this.state.newNoteContent}
           onChange={this.handleContentChange}
         />
-        <input
-          className="noteAuthor"
-          placeholder="Your name..."
-          value={this.state.newNoteAuthor}
-          onChange={this.handleAuthorChange}
-        />
-        <button
-          className="noteButton"
-          onClick={this.writeNote}
-        >
-          Leave a note
-        </button>
+        <div className="submitBlock">
+          <input
+            className="authorInput"
+            placeholder="Your name..."
+            value={this.state.newNoteAuthor}
+            onChange={this.handleAuthorChange}
+          />
+          <button
+            className="noteButton"
+            onClick={this.writeNote}
+          >
+            Send message
+          </button>
+        </div>
       </div>
     )
   }
