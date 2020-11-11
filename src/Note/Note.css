@@ -2,11 +2,12 @@
   padding:10px;
   height: auto;
   margin: auto;
-  width: 70%;
+  width: 65%;
   font-family: 'Lato', sans-serif;
   font-size: 1em;
   color: #222;
-  background-color: #eed;
+  /* background-color: #eed; */
+  background-color: #ecf5b5;
   border-radius: 4px;
   box-shadow: 4px 3px 2px #333;
   opacity: 1;
@@ -28,17 +29,17 @@ p.noteContent {
 }
 
 p.noteAuthor {
-  margin: 0 0.5em 0.5em;
+  margin: 0.5em 0.5em 0.5em;
 }
 
-.noteContent{
+.noteContent {
   font-size: 1.3em;
   overflow-wrap: break-word;
   word-wrap: break-word;
   hyphens: auto;
 }
 
-.noteAuthor{
+.noteAuthor {
   font-size: 1.2em;
   text-align: end;
 }

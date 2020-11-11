@@ -20,7 +20,6 @@
   .footer {
     font-size: 1.0em !important;
   }
-
 }
 
 .App {
@@ -29,15 +28,19 @@
 
 .App-header {
   height: 8rem;
-  background-color: #282c34;
+  /* background-color: #282c34; */
+  /* background-color: #f7b5ac; */
+  background-color: #f7a99e;
   font-family: 'Permanent Marker', cursive;
   font-size: 3.2em;
   /* color: #deea97; */
-  color: #f7b5ac;
+  /* color: #f7b5ac; */
+  color: #dde89a;
   text-shadow: 3px 3px 3px #000;
   display: flex;
   flex-direction: row;
   align-items: center;
+  border-bottom: 13px solid #dde89a;
 }
 
 .App-logo {
@@ -71,7 +74,7 @@ p {
   color: #080a0e;
   font-family: "Quicksand", sans-serif;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 .welcome-message {
@@ -87,7 +90,7 @@ p {
 }
 
 .tab {
-  color: #f7b5ac;
+  color: #f7a99e;
   font-family: 'Permanent Marker', cursive;
   font-size: 1.5rem;
   border-spacing: 2em;
@@ -102,7 +105,8 @@ p {
 }
 
 .tab:hover {
-  color:#ddbdff;
+  /* color:#ddbdff; */
+  color: #dde89a;
 }
 
 .center {
@@ -121,8 +125,11 @@ p {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #282c34;
-  color: #f3cfca;
+  /* background-color: #282c34; */
+  background-color: #f7a99e;
+  /* color: #f3cfca; */
+  /* color: #5a595a; */
+  color: white;
   height: 4rem;
   font-family: "Quicksand", sans-serif;
   font-size: 1.2rem;

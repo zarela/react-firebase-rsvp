@@ -1,0 +1,10 @@
+.recommendations {
+  font-size: 0.9em;
+  width: 60%;
+}
+
+h4 {
+  color: #fba69a;
+  padding-bottom: 0;
+  text-transform: uppercase;
+}
