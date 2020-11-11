@@ -5,8 +5,11 @@
     margin-top: 1em;
     margin-left: 0 !important;
   }
+  .noteInput {
+    width: 80% !important;
+  }
   .authorInput {
-    width: 65% !important;
+    width: 80% !important;
   }
 }
 
@@ -47,7 +50,6 @@
 }
 
 .submitBlock {
-  margin-left: 1em;
   width: 65%;
   min-width: 65%;
   display: flex;
@@ -66,7 +68,6 @@
   border-radius: 0.3em;
   font-family: "Quicksand", sans-serif;
   color: #d2cbcb;
-  transition: 0.2s ease-out;
   padding: 0.5em 0 0 1rem;
 }
 
