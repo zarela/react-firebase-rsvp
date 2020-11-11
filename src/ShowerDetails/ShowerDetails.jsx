@@ -16,11 +16,13 @@ const ShowerDetails = () => {
         Zoom Link: {''}
          <a href="https://us02web.zoom.us/j/88078277688"  rel="noreferrer" target="_blank">Enter Here</a><br/>
          Meeting ID: 880 7827 7688<br/>
+         <br/>
+         With love, Zarela & Dean
       </p>
       <div className="recommendations">
         <p>
           <h4>Recommendations:</h4>
-          Join in time of 5 mins earlier<br/>
+          Join on time or 5 mins earlier<br/>
           Please keep your audio deactivated<br/>
           Preferably use a computer to connect<br/>
           Have a blank piece of paper and markers handy<br/>
