@@ -102,6 +102,7 @@ p {
   border: none;
   background-color: white;
   outline: none;
+  cursor: pointer;
 }
 
 .tab:hover {
