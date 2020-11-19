@@ -70,7 +70,7 @@ class App extends Component {
             <button className="tab" onClick={() => this.renderView('details')}>Shower details</button>
           </li>
           <li className="tab">
-            <button className="tab" onClick={() => this.renderView('friendsNotes')}>Leave a message</button>
+            <button className="tab" onClick={() => this.renderView('friendsNotes')}>Sign our guestbook</button>
           </li>
           <li className="tab">
             <button className="tab" onClick={() => this.renderView('registry')}>Baby registry</button>
@@ -85,7 +85,8 @@ class App extends Component {
         )}
         {this.state.path === 'friendsNotes' && (
           <div className="notesWrapper">
-            <p>Leave a note for Zarela and Dean</p>
+            <p>Thank you for visiting our guestbook!<br/>
+            We would love to read your messages</p>
             <br />
             <div className="notesFooter">
               <NoteForm addNote={this.addNote}/>

@@ -24,7 +24,7 @@ const ShowerDetails = () => {
           <h4>Recommendations:</h4>
           Join on time or 5 mins earlier<br/>
           Please keep your audio deactivated<br/>
-          Preferably use a computer to connect<br/>
+          Preferably use a PC or laptop to connect<br/>
           Have a blank piece of paper and markers handy<br/>
         </p>
       </div>
